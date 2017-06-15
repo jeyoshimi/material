@@ -110,9 +110,17 @@ md-autocomplete {
     padding: 0 15px;
     line-height: 40px;
     height: 40px;
+    position: absolute;
+  }
+  .md-autocomplete-placeholder {
+    color: #757575;
+    font-size: 14px;
+    line-height: 40px; // Matches md-autocomplete height.
+    padding: 0 15px;
   }
   .md-show-clear-button button {
-    position: relative;
+    position: absolute;
+    right: 0;
     line-height: 20px;
     text-align: center;
     width: $md-autocomplete-clear-size;
@@ -123,7 +131,7 @@ md-autocomplete {
     padding: 0;
     font-size: 12px;
     background: transparent;
-    margin: auto 5px;
+    margin: 5px;
     &:after {
       content: '';
       position: absolute;
